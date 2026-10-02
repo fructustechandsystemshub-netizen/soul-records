@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Soul Touch Records music academy" />
+    <title>Soul Touch Records | Music Academy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="hero" id="home">
+      <div class="hero__image" aria-hidden="true"></div>
+      <div class="hero__wash" aria-hidden="true"></div>
+
+      <section class="hero-card" aria-label="Soul Touch Records introduction">
+        <div class="piano-art" aria-hidden="true"></div>
+        <header class="site-header">
+          <a class="brand" href="#home" aria-label="Soul Touch Records home">
+            <span class="brand__mark" aria-hidden="true">♪</span>
+            <span class="brand__name">
+              <strong>SOUL TOUCH</strong>
+              <small>R E C O R D S</small>
+            </span>
+          </a>
+
+          <nav class="navigation" aria-label="Primary navigation">
+            <a class="navigation__link is-active" href="#home">HOME</a>
+            <a class="navigation__link" href="courses.html">COURSES</a>
+            <a class="navigation__link" href="gallery.html">GALLERY</a>
+            <a class="navigation__link" href="contact.html">CONTACT</a>
+          </nav>
+
+          <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </header>
+
+        <div class="hero-content">
+          <div class="hero-content__spacer" aria-hidden="true"></div>
+          <div class="hero-copy">
+            <p class="eyebrow">MUSIC</p>
+            <h1>Soul Touch<br />Music Academy</h1>
+            <ul class="course-list" id="courses">
+              <li>Piano (Clásico y Moderno)</li>
+              <li>Teoría Musical</li>
+              <li>Producción Musical</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="slider-dots" aria-label="Hero slides">
+          <button class="slider-dot is-active" type="button" aria-label="Slide 1" aria-current="true"></button>
+          <button class="slider-dot" type="button" aria-label="Slide 2"></button>
+          <button class="slider-dot" type="button" aria-label="Slide 3"></button>
+          <button class="slider-dot" type="button" aria-label="Slide 4"></button>
+        </div>
+      </section>
+    </main>
+
+    <section class="visually-hidden" id="gallery" aria-label="Gallery">Explore the Soul Touch Records gallery.</section>
+    <section class="visually-hidden" id="contact" aria-label="Contact">Contact Soul Touch Records.</section>
+    <script src="script.js"></script>
+  </body>
+</html>

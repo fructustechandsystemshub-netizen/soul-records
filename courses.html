@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Explore piano, music theory, production and recording courses at Soul Touch Records Music Academy." />
+    <title>Music Courses | Soul Touch Records</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="courses-page">
+    <main class="courses-frame">
+      <header class="site-header courses-header">
+        <a class="brand" href="index.html" aria-label="Soul Touch Records home">
+          <span class="brand__mark" aria-hidden="true">♫</span>
+          <span class="brand__name">
+            <strong>SOUL TOUCH</strong>
+            <small>R E C O R D S</small>
+          </span>
+        </a>
+
+        <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="navigation" aria-label="Primary navigation">
+          <a class="navigation__link" href="index.html">HOME</a>
+          <a class="navigation__link is-active" href="courses.html" aria-current="page">COURSES</a>
+          <a class="navigation__link" href="gallery.html">GALLERY</a>
+          <a class="navigation__link" href="contact.html">CONTACT</a>
+        </nav>
+      </header>
+
+      <section class="courses-intro" aria-labelledby="courses-title">
+        <div class="courses-heading">
+          <p class="eyebrow">ACADEMIA</p>
+          <h1 id="courses-title">Music Courses</h1>
+          <p class="courses-lede">Formación musical de excelencia para crear, interpretar<br class="desktop-break" /> y producir con pasión y propósito.</p>
+        </div>
+        <div class="course-filters" role="group" aria-label="Filter courses by category">
+          <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">Todos</button>
+          <button class="filter-button" type="button" data-filter="piano" aria-pressed="false">Piano</button>
+          <button class="filter-button" type="button" data-filter="theory" aria-pressed="false">Teoría</button>
+          <button class="filter-button" type="button" data-filter="production" aria-pressed="false">Producción</button>
+        </div>
+      </section>
+
+      <section class="course-grid" aria-label="Available courses">
+        <article class="course-card" data-category="piano">
+          <div class="course-art course-art--classic" aria-hidden="true">
+            <svg viewBox="0 0 110 100" role="img"><defs><linearGradient id="keys" x2="1" y2="1"><stop stop-color="#effaff"/><stop offset="1" stop-color="#76c8ff"/></linearGradient></defs><path d="M26 14 78 18 91 87 15 82Z" fill="#063b9c" opacity=".7"/><path d="m31 12 47 4 11 68-68-4Z" fill="url(#keys)" stroke="#d8f5ff" stroke-width="2"/><path d="m43 13 7 1 7 65-8-.5Zm19 2 7 1 7 64-8-.5Z" fill="#06256e"/><path d="m28 27 51 3M25 43l54 3M22 59l57 4" stroke="#72bfff" stroke-width="1.5" opacity=".8"/></svg>
+          </div>
+          <div class="course-info"><h2>Piano Clásico</h2><p class="course-meta"><span>♬</span> Nivel: Principiante a Avanzado</p><p class="course-meta"><span>◷</span> Duración: 12 semanas</p><p class="course-description">Domina la técnica, la expresión y el repertorio clásico.</p><a class="course-link" href="#contact">Ver curso</a></div>
+        </article>
+
+        <article class="course-card" data-category="piano">
+          <div class="course-art course-art--modern" aria-hidden="true">
+            <svg viewBox="0 0 110 100" role="img"><path d="m14 52 44-35 42 16-43 39Z" fill="#062e85"/><path d="m14 52 43 20v15L14 67Z" fill="#0b2772"/><path d="m57 72 43-39v15L57 87Z" fill="#071e62"/><path d="m24 48 34-26 29 11-35 30Z" fill="#67baff" stroke="#b8ebff" stroke-width="2"/><path d="m32 45 7-5 8 19-7 5Zm16-12 7-5 8 20-7 5Zm16-3 7 3 8 16-7 5Z" fill="#061d63"/><path d="m27 50 27 13" stroke="#e5f8ff" stroke-width="2" opacity=".8"/></svg>
+          </div>
+          <div class="course-info"><h2>Piano Moderno</h2><p class="course-meta"><span>♬</span> Nivel: Principiante a Avanzado</p><p class="course-meta"><span>◷</span> Duración: 10 semanas</p><p class="course-description">Armonía, grooves y recursos para el piano contemporáneo.</p><a class="course-link" href="#contact">Ver curso</a></div>
+        </article>
+
+        <article class="course-card" data-category="theory">
+          <div class="course-art course-art--clef" aria-hidden="true"><span>𝄞</span><i></i></div>
+          <div class="course-info"><h2>Teoría Musical</h2><p class="course-meta"><span>♬</span> Nivel: Principiante a Avanzado</p><p class="course-meta"><span>◷</span> Duración: 8 semanas</p><p class="course-description">Entiende el lenguaje musical y llévalo a la práctica.</p><a class="course-link" href="#contact">Ver curso</a></div>
+        </article>
+
+        <article class="course-card" data-category="production">
+          <div class="course-art course-art--mixer" aria-hidden="true">
+            <svg viewBox="0 0 110 100" role="img"><g transform="rotate(-8 55 50)"><rect x="15" y="19" width="80" height="57" rx="8" fill="#08276d" stroke="#6fc6ff" stroke-width="2"/><rect x="22" y="26" width="66" height="26" rx="3" fill="#071b59"/><path d="M26 40h7l3-8 5 14 4-8h5l3-4 5 6h5l3-9 4 10 4-5h8" fill="none" stroke="#d4f5ff" stroke-width="2"/><circle cx="33" cy="64" r="7" fill="#1687fc" stroke="#b8edff" stroke-width="2"/><circle cx="54" cy="64" r="7" fill="#1687fc" stroke="#b8edff" stroke-width="2"/><circle cx="76" cy="64" r="7" fill="#1687fc" stroke="#b8edff" stroke-width="2"/></g></svg>
+          </div>
+          <div class="course-info"><h2>Producción Musical</h2><p class="course-meta"><span>♬</span> Nivel: Principiante a Avanzado</p><p class="course-meta"><span>◷</span> Duración: 12 semanas</p><p class="course-description">Crea, produce y mezcla tus propias canciones.</p><a class="course-link" href="#contact">Ver curso</a></div>
+        </article>
+
+        <article class="course-card" data-category="theory">
+          <div class="course-art course-art--composition" aria-hidden="true">
+            <svg viewBox="0 0 110 100" role="img"><path d="m19 22 53-8 9 66-53 8Z" fill="#d8f2ff" stroke="#fff" stroke-width="3"/><path d="m27 37 37-5m-35 14 39-5m-37 14 39-5m-37 14 40-5" stroke="#258df1" stroke-width="2" opacity=".8"/><path d="m75 71 19-49 7 3-19 49-12 9Z" fill="#071f67"/><path d="m94 22 4-10 8 3-5 10Z" fill="#f5fbff"/><path d="m70 79 12-6-10-4Z" fill="#ffd782"/></svg>
+          </div>
+          <div class="course-info"><h2>Composición</h2><p class="course-meta"><span>♬</span> Nivel: Intermedio a Avanzado</p><p class="course-meta"><span>◷</span> Duración: 10 semanas</p><p class="course-description">Desarrolla tus ideas y escribe música con identidad.</p><a class="course-link" href="#contact">Ver curso</a></div>
+        </article>
+
+        <article class="course-card" data-category="production">
+          <div class="course-art course-art--mic" aria-hidden="true">
+            <svg viewBox="0 0 110 100" role="img"><path d="M20 36a12 12 0 0 1 24 0v19a12 12 0 0 1-24 0Z" fill="#0b3d97" stroke="#8bd6ff" stroke-width="2"/><path d="M14 47v8a18 18 0 0 0 36 0v-8" fill="none" stroke="#76caff" stroke-width="3"/><path d="M32 73v10m-11 3h23" stroke="#9be0ff" stroke-width="3"/><rect x="62" y="13" width="26" height="52" rx="12" fill="#d8f3ff" stroke="#fff" stroke-width="2"/><path d="M67 24h16m-16 7h16m-16 7h16m-16 7h16m-16 7h16" stroke="#458dd2" stroke-width="2"/><path d="M75 65v15m-11 5h23" stroke="#c5edff" stroke-width="4"/><path d="m57 28-7 5v20l7 5m37-30 7 5v20l-7 5" fill="#0d388c" stroke="#62baff" stroke-width="2"/></svg>
+          </div>
+          <div class="course-info"><h2>Arreglo &amp; Grabación</h2><p class="course-meta"><span>♬</span> Nivel: Intermedio a Avanzado</p><p class="course-meta"><span>◷</span> Duración: 10 semanas</p><p class="course-description">Arregla, graba y da vida profesional a tu música.</p><a class="course-link" href="#contact">Ver curso</a></div>
+        </article>
+      </section>
+
+      <footer class="courses-footer" id="contact">
+        <a class="footer-brand" href="index.html" aria-label="Soul Touch Records home"><span class="footer-brand__mark">♫</span><span><strong>Soul Touch Records / Soul Touch Music Academy</strong><small>Formamos músicos. Impulsamos talento. Creamos futuro.</small></span></a>
+        <a class="footer-contact" href="mailto:info@soultouchrecords.com"><span aria-hidden="true">✉</span> info@soultouchrecords.com</a>
+        <a class="footer-contact" href="tel:+34600123456"><span aria-hidden="true">♧</span> +34 600 123 456</a>
+        <span class="footer-contact"><span aria-hidden="true">♧</span> Madrid, España</span>
+      </footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
